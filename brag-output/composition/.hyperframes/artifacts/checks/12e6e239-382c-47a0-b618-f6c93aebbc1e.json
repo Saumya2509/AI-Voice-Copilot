@@ -1,0 +1,799 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"scene-1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene-1",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AI-Voice\\brag-output\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"scene-1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"scene-2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene-2",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AI-Voice\\brag-output\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"scene-2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"scene-3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene-3",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AI-Voice\\brag-output\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"scene-3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"scene-4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene-4",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AI-Voice\\brag-output\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"scene-4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"scene-5\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#scene-5",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AI-Voice\\brag-output\\composition\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"scene-5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 20,
+    "samples": [
+      1.111,
+      3.333,
+      5.556,
+      7.778,
+      10,
+      12.222,
+      14.444,
+      16.667,
+      18.889
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.111,
+      5.556,
+      10,
+      14.444,
+      18.889
+    ],
+    "checked": 73,
+    "passed": 73
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"What if your restaurant phone never missed an order?\" (9 words) is on screen 2.06 s (±0.01 s), under its 2.40 s floor: hold it about 0.5 s + 0.3 s a word (3.20 s here) before it leaves or changes; see references/motion.md.",
+        "text": "What if your restaurant phone never missed an order?",
+        "selector": "h1.hook-title",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 341.02,
+          "y": 343.26,
+          "width": 1237.94,
+          "height": 199.46000000000004
+        },
+        "time": 0.406,
+        "words": 9,
+        "seconds": 2.063,
+        "floorSeconds": 2.4,
+        "measured": [
+          {
+            "time": 0.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.25,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.375,
+            "opacity": 0.44,
+            "heightPx": 194
+          },
+          {
+            "time": 0.5,
+            "opacity": 0.87,
+            "heightPx": 199
+          },
+          {
+            "time": 0.625,
+            "opacity": 0.97,
+            "heightPx": 201
+          },
+          {
+            "time": 0.75,
+            "opacity": 1,
+            "heightPx": 201
+          },
+          {
+            "time": 0.875,
+            "opacity": 1,
+            "heightPx": 201
+          },
+          {
+            "time": 2,
+            "opacity": 1,
+            "heightPx": 201
+          },
+          {
+            "time": 2.125,
+            "opacity": 1,
+            "heightPx": 201
+          },
+          {
+            "time": 2.25,
+            "opacity": 1,
+            "heightPx": 201
+          },
+          {
+            "time": 2.375,
+            "opacity": 0.83,
+            "heightPx": 203
+          },
+          {
+            "time": 2.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 2.625,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 2.75,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"Sub-second multilingual voice intake, autonomous revenue ...\" (15 words) is on screen 1.87 s (±0.01 s), under its 3.75 s floor: hold it about 0.5 s + 0.3 s a word (5.00 s here) before it leaves or changes; see references/motion.md.",
+        "text": "Sub-second multilingual voice intake, autonomous revenue upselling, and instant POS synchronization — running 100% locally.",
+        "selector": "p.hook-desc",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 498.64,
+          "y": 572.97,
+          "width": 922.7200000000001,
+          "height": 82
+        },
+        "time": 0.602,
+        "words": 15,
+        "seconds": 1.867,
+        "floorSeconds": 3.75,
+        "measured": [
+          {
+            "time": 0.25,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.375,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.625,
+            "opacity": 0.58,
+            "heightPx": 82
+          },
+          {
+            "time": 0.75,
+            "opacity": 0.93,
+            "heightPx": 82
+          },
+          {
+            "time": 0.875,
+            "opacity": 1,
+            "heightPx": 82
+          },
+          {
+            "time": 1,
+            "opacity": 1,
+            "heightPx": 82
+          },
+          {
+            "time": 2,
+            "opacity": 1,
+            "heightPx": 82
+          },
+          {
+            "time": 2.125,
+            "opacity": 1,
+            "heightPx": 82
+          },
+          {
+            "time": 2.25,
+            "opacity": 1,
+            "heightPx": 82
+          },
+          {
+            "time": 2.375,
+            "opacity": 0.83,
+            "heightPx": 83
+          },
+          {
+            "time": 2.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 2.625,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 2.75,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 36 text elements stay under it for 0.5 s or more, the smallest \"Live Call Desk & Bilingual Transcript\" at 14 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Live Call Desk & Bilingual Transcript",
+        "selector": "#frame-1 > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1467.53,
+          "y": 859.38,
+          "width": 300.8,
+          "height": 14.76
+        },
+        "time": 3,
+        "times": [
+          0,
+          0.25,
+          0.625,
+          0.875,
+          0.875,
+          0.875,
+          2.75,
+          2.75,
+          2.75,
+          2.75,
+          2.75,
+          2.75,
+          2.75,
+          3,
+          7.75,
+          7.75,
+          7.75,
+          7.75,
+          7.75,
+          7.75,
+          7.75,
+          8,
+          12.75,
+          12.75,
+          12.75,
+          12.75,
+          12.75,
+          12.75,
+          12.75,
+          13,
+          16.875,
+          16.875,
+          17.25,
+          17.375,
+          17.375,
+          17.5
+        ],
+        "fontPx": 13.78,
+        "floorPx": 28,
+        "seconds": 4.5,
+        "elements": [
+          {
+            "selector": "#frame-1 > div:nth-of-type(1)",
+            "text": "Live Call Desk & Bilingual Transcript",
+            "fontPx": 13.78,
+            "time": 3,
+            "seconds": 4.5
+          },
+          {
+            "selector": "#frame-2 > div:nth-of-type(1)",
+            "text": "High-Margin Combo & Pairing Recommender",
+            "fontPx": 13.78,
+            "time": 8,
+            "seconds": 4.5
+          },
+          {
+            "selector": "#frame-3 > div:nth-of-type(1)",
+            "text": "Thermal Kitchen Order Ticket Simulator",
+            "fontPx": 13.78,
+            "time": 13,
+            "seconds": 3.5
+          },
+          {
+            "selector": "div.brand-badge",
+            "text": "Autonomous Restaurant Copilot",
+            "fontPx": 14,
+            "time": 0,
+            "seconds": 20
+          },
+          {
+            "selector": "div.hook-stats-pill > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Accuracy",
+            "fontPx": 14,
+            "time": 0.875,
+            "seconds": 1.625
+          },
+          {
+            "selector": "div.hook-stats-pill > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Turnaround",
+            "fontPx": 14,
+            "time": 0.875,
+            "seconds": 1.625
+          },
+          {
+            "selector": "div.hook-stats-pill > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Cloud API Costs",
+            "fontPx": 14,
+            "time": 0.875,
+            "seconds": 1.625
+          },
+          {
+            "selector": "div.outro-metrics-grid > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Voice Accuracy",
+            "fontPx": 15,
+            "time": 17.25,
+            "seconds": 2.75
+          },
+          {
+            "selector": "div.outro-metrics-grid > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Server Latency",
+            "fontPx": 15,
+            "time": 17.375,
+            "seconds": 2.625
+          },
+          {
+            "selector": "div.outro-metrics-grid > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Cloud LLM Costs",
+            "fontPx": 15,
+            "time": 17.375,
+            "seconds": 2.625
+          },
+          {
+            "selector": "div.outro-metrics-grid > div:nth-of-type(4) > span:nth-of-type(2)",
+            "text": "Local & Private",
+            "fontPx": 15,
+            "time": 17.5,
+            "seconds": 2.5
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "01 • Multilingual Intake",
+            "fontPx": 16,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "⚡ Parse time p95: • 100% voice benchmark score",
+            "fontPx": 16,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1) > b:nth-of-type(1)",
+            "text": "~5 ms",
+            "fontPx": 16,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "02 • Autonomous Revenue Engine",
+            "fontPx": 16,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "📈 on confirmed calls",
+            "fontPx": 16,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1) > b:nth-of-type(1)",
+            "text": "+18% Average Order Value",
+            "fontPx": 16,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > div:nth-of-type(1)",
+            "text": "03 • Kitchen Order Dispatch",
+            "fontPx": 16,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "🖨️ • Zero dropped orders",
+            "fontPx": 16,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > div:nth-of-type(3) > span:nth-of-type(1) > b:nth-of-type(1)",
+            "text": "KOT dispatched in < 0.2s",
+            "fontPx": 16,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Offline Vosk STT Web Worker + Piper Neural Speech Synthesis",
+            "fontPx": 19,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Interruptible: callers can cut in naturally at any moment",
+            "fontPx": 19,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Homophone disambiguation (e.g., \"to naan\" → 2 Naan)",
+            "fontPx": 19,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Apriori Association Mining: discovers itemset lift ≥ 1.3",
+            "fontPx": 19,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "BCG Menu Engineering: classifies Stars, Plowhorses, Puzzles & Dogs",
+            "fontPx": 19,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Never pitches low-margin Dogs — prioritizes chef's picks",
+            "fontPx": 19,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Thermal Kitchen Order Ticket format with sequential numbering",
+            "fontPx": 19,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Strict integer paise accounting across SQLite — zero rounding drift",
+            "fontPx": 19,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Instant order desk updates via live SSE broadcast",
+            "fontPx": 19,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "div.hook-tag",
+            "text": "Local Voice AI • Zero Cloud Latency",
+            "fontPx": 20,
+            "time": 0.25,
+            "seconds": 2.25
+          },
+          {
+            "selector": "div.outro-cta > span:nth-of-type(1)",
+            "text": "🔗 github.com/Saumya2509/AI-Voice-Copilot",
+            "fontPx": 21.4,
+            "time": 16.875,
+            "seconds": 3.125
+          },
+          {
+            "selector": "#scene-2 > div:nth-of-type(1) > p:nth-of-type(1)",
+            "text": "Understands natural dialect code-switching with real-time English glossing and full-duplex caller barge-in.",
+            "fontPx": 22,
+            "time": 2.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-3 > div:nth-of-type(1) > p:nth-of-type(1)",
+            "text": "Tadka mines historical sales to spot high-margin item affinities, pitching winning pairings at the perfect psychological moment.",
+            "fontPx": 22,
+            "time": 7.75,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#scene-4 > div:nth-of-type(1) > p:nth-of-type(1)",
+            "text": "Orders are validated against JSON schemas, dispatched through an idempotent retry queue, and broadcast live via Server-Sent Events.",
+            "fontPx": 22,
+            "time": 12.75,
+            "seconds": 3.75
+          },
+          {
+            "selector": "p.outro-sub",
+            "text": "Heritage Hospitality meets High-Performance Local AI",
+            "fontPx": 25.29,
+            "time": 16.875,
+            "seconds": 3.125
+          },
+          {
+            "selector": "p.hook-desc",
+            "text": "Sub-second multilingual voice intake, autonomous revenue upselling, and instant POS synchronization — running 100% locally.",
+            "fontPx": 26,
+            "time": 0.625,
+            "seconds": 1.875
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.75 s (3.38–7.13 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 3.375,
+        "seconds": 3.75,
+        "floorSeconds": 3,
+        "until": 7.125
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.75 s (8.38–12.13 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 8.375,
+        "seconds": 3.75,
+        "floorSeconds": 3,
+        "until": 12.125
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"Orders are validated against JSON schemas, dispatched thr...\" (19 words) is on screen 3.77 s (±0.01 s), under its 4.65 s floor: hold it about 0.5 s + 0.3 s a word (6.20 s here) before it leaves or changes; see references/motion.md.",
+        "text": "Orders are validated against JSON schemas, dispatched through an idempotent retry queue, and broadcast live via Server-Sent Events.",
+        "selector": "#scene-4 > div:nth-of-type(1) > p:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 65.54,
+          "y": 525.08,
+          "width": 842.23,
+          "height": 71.09000000000003
+        },
+        "time": 12.703,
+        "words": 19,
+        "seconds": 3.766,
+        "floorSeconds": 4.65,
+        "measured": [
+          {
+            "time": 12.375,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 12.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 12.625,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 12.75,
+            "opacity": 0.68,
+            "heightPx": 71
+          },
+          {
+            "time": 12.875,
+            "opacity": 0.95,
+            "heightPx": 71
+          },
+          {
+            "time": 13,
+            "opacity": 1,
+            "heightPx": 71
+          },
+          {
+            "time": 13.125,
+            "opacity": 1,
+            "heightPx": 71
+          },
+          {
+            "time": 16,
+            "opacity": 1,
+            "heightPx": 71
+          },
+          {
+            "time": 16.125,
+            "opacity": 1,
+            "heightPx": 71
+          },
+          {
+            "time": 16.25,
+            "opacity": 1,
+            "heightPx": 71
+          },
+          {
+            "time": 16.375,
+            "opacity": 0.83,
+            "heightPx": 71
+          },
+          {
+            "time": 16.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.625,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.75,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 160
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
