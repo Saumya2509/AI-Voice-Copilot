@@ -1,0 +1,21 @@
+id: english-ambiguity-combo
+title: English with ambiguity and a combo
+description: An ambiguous paneer dish, a combo offer that completes a set, confirmation.
+language: en
+utterances:
+  - {at: 0.0, text: "hi there"}
+  - {at: 3.0, text: "i would like one paneer masala please"}
+  - {at: 7.0, text: "the butter one"}
+  - {at: 10.0, text: "and one chicken biryani with a boondi raita"}
+  - {at: 15.0, text: "that's all"}
+  - {at: 20.0, text: "yes please"}
+  - {at: 26.0, text: "yes"}
+  - {at: 29.0, text: "my name is Arjun"}
+  - {at: 32.0, text: "my number is 9876543210"}
+expect:
+  outcome: ordered
+  clarifications: 1
+  offers_shown: 1
+  offers_accepted: 1
+  combo_accepted: true
+  items: {Paneer Butter Masala: 1, Chicken Biryani: 1, Boondi Raita: 1}

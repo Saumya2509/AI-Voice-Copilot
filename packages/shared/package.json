@@ -1,0 +1,14 @@
+{
+  "name": "@tadka/shared",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JSON schemas shared by the Tadka API and web app, with generated TypeScript types.",
+  "type": "module",
+  "main": "types/index.ts",
+  "scripts": {
+    "gen:types": "node scripts/gen-types.mjs"
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "15.0.3"
+  }
+}

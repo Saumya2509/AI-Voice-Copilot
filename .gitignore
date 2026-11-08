@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+node_modules/
+apps/web/node_modules/
+packages/shared/node_modules/
+dist/
+*.tsbuildinfo
+
+# SQLite databases & temp files
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+data/seed/*.csv
+
+# Models & Media
+apps/web/public/models/
+apps/api/nlu/models/*.joblib
+shots/
+data/recordings/
+data/models/
+
+# Environment files
+.env
+.env.*
+!.env.example

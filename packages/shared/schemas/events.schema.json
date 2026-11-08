@@ -1,0 +1,512 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tadka.local/schemas/events.schema.json",
+  "title": "ServerEvent",
+  "description": "Events sent by the server on /ws/call/{call_id}. Every event has an increasing seq; clients ignore events with an older seq.",
+  "type": "object",
+  "required": [
+    "type",
+    "seq",
+    "ts"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "state.changed",
+        "nlu.result",
+        "cart.updated",
+        "clarify.ask",
+        "upsell.offer",
+        "reply.say",
+        "order.finalized",
+        "pos.sent",
+        "pos.ack",
+        "error",
+        "transcript",
+        "menu.highlight"
+      ]
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "ts": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "state.changed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "state"
+        ],
+        "properties": {
+          "state": {
+            "enum": [
+              "GREETING",
+              "TAKING_ORDER",
+              "CLARIFYING",
+              "OFFERING",
+              "CONFIRMING",
+              "CAPTURING_DETAILS",
+              "FINALIZED",
+              "ABANDONED"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "nlu.result"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "intent",
+          "language",
+          "matches"
+        ],
+        "properties": {
+          "intent": {
+            "type": "string"
+          },
+          "language": {
+            "enum": [
+              "en",
+              "hi",
+              "hinglish"
+            ]
+          },
+          "matches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "span",
+                "item_id",
+                "score",
+                "status"
+              ],
+              "properties": {
+                "span": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "item_id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "score": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "status": {
+                  "enum": [
+                    "accepted",
+                    "clarify"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "cart.updated"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "cart"
+        ],
+        "properties": {
+          "cart": {
+            "type": "object",
+            "required": [
+              "lines",
+              "subtotal",
+              "discount",
+              "total",
+              "upsell"
+            ],
+            "properties": {
+              "lines": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "line_id",
+                    "item_id",
+                    "name",
+                    "qty",
+                    "unit_price",
+                    "modifiers",
+                    "source"
+                  ],
+                  "properties": {
+                    "qty": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "unit_price": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "source": {
+                      "enum": [
+                        "customer",
+                        "upsell",
+                        "combo",
+                        "staff"
+                      ]
+                    }
+                  }
+                }
+              },
+              "subtotal": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "discount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "total": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "upsell": {
+                "type": "object",
+                "required": [
+                  "shown",
+                  "accepted",
+                  "added_revenue",
+                  "added_margin"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "clarify.ask"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "clarify_id",
+          "question",
+          "question_en",
+          "options"
+        ],
+        "properties": {
+          "clarify_id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "label"
+              ]
+            }
+          },
+          "question_en": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "upsell.offer"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "offer_id",
+          "item",
+          "reason"
+        ],
+        "properties": {
+          "offer_id": {
+            "type": "string"
+          },
+          "item": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "price"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "price": {
+                "type": "integer"
+              }
+            }
+          },
+          "reason": {
+            "type": "object",
+            "required": [
+              "headline",
+              "why",
+              "expected_gain"
+            ],
+            "properties": {
+              "headline": {
+                "type": "string"
+              },
+              "why": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "expected_gain": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "reply.say"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "text",
+          "lang",
+          "display_text_en"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lang": {
+            "type": "string"
+          },
+          "display_text_en": {
+            "type": "string",
+            "minLength": 1,
+            "description": "English for the screen."
+          },
+          "speech_text": {
+            "type": "string",
+            "description": "What the voice reads: the reply for English calls, its Devanagari form for Hindi and Hinglish calls."
+          },
+          "speech_lang": {
+            "enum": ["en", "hi"],
+            "description": "Which voice reads speech_text."
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "order.finalized"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "order"
+        ],
+        "properties": {
+          "order": {
+            "$ref": "order.schema.json"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "pos.sent"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "order_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "pos.ack"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "order_id",
+          "kot_no"
+        ],
+        "properties": {
+          "kot_no": {
+            "type": "string",
+            "pattern": "^K-[0-9]+$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "error"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "code",
+          "message"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "transcript"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "speaker",
+          "original_text",
+          "display_text_en",
+          "lang",
+          "parts"
+        ],
+        "properties": {
+          "speaker": {
+            "enum": [
+              "guest"
+            ]
+          },
+          "original_text": {
+            "type": "string"
+          },
+          "display_text_en": {
+            "type": "string"
+          },
+          "lang": {
+            "enum": [
+              "en",
+              "hi",
+              "hinglish"
+            ]
+          },
+          "parts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "text",
+                "kind"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "kind": {
+                  "enum": [
+                    "plain",
+                    "item",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "menu.highlight"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "item_id",
+          "kind"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "integer"
+          },
+          "kind": {
+            "enum": [
+              "heard",
+              "staff"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

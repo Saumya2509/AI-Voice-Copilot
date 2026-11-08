@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tadka.local/schemas/order.schema.json",
+  "title": "Order",
+  "description": "A finalized order from the voice copilot. Money is in whole rupees; the server recomputes every total from menu prices.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "order_id",
+    "call_id",
+    "channel",
+    "language",
+    "customer",
+    "lines",
+    "subtotal",
+    "discount",
+    "total",
+    "upsell",
+    "confirmed_at"
+  ],
+  "properties": {
+    "order_id": {
+      "type": "string",
+      "pattern": "^ORD-[0-9]+$"
+    },
+    "call_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "channel": {
+      "enum": [
+        "dine_in",
+        "phone",
+        "takeaway"
+      ]
+    },
+    "language": {
+      "enum": [
+        "en",
+        "hi",
+        "hinglish",
+        "mr",
+        "gu"
+      ]
+    },
+    "customer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "phone",
+        "address"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Masked: first two and last two digits visible.",
+          "pattern": "^[0-9]{2}X+[0-9]{2}$"
+        },
+        "address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        }
+      }
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/line"
+      }
+    },
+    "subtotal": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "discount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "upsell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "shown",
+        "accepted",
+        "added_revenue",
+        "added_margin"
+      ],
+      "properties": {
+        "shown": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "accepted": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "added_revenue": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "added_margin": {
+          "type": "integer"
+        }
+      }
+    },
+    "confirmed_at": {
+      "type": "string",
+      "description": "ISO 8601 in UTC, for example 2026-10-11T13:42:08Z.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+    }
+  },
+  "$defs": {
+    "modifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "group",
+        "name",
+        "price_delta"
+      ],
+      "properties": {
+        "group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "price_delta": {
+          "type": "integer"
+        }
+      }
+    },
+    "line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "item_id",
+        "name",
+        "qty",
+        "unit_price",
+        "modifiers",
+        "notes",
+        "source"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "qty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "unit_price": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/modifier"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "source": {
+          "enum": [
+            "customer",
+            "upsell",
+            "combo",
+            "staff"
+          ],
+          "description": "customer: said by the caller; upsell or combo: an accepted offer; staff: added by hand from the menu."
+        },
+        "upsell_rule_id": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "if": {
+        "properties": {
+          "source": {
+            "const": "upsell"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "upsell_rule_id"
+        ]
+      }
+    }
+  }
+}

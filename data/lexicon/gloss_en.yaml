@@ -1,0 +1,109 @@
+# English display for ordering language (improve.md, section 4). Used by nlu/gloss_en.py.
+# `phrases` may contain {x}: the words in between, glossed on their own. Longer phrases win.
+# `words` are single-word fallbacks. An empty string drops the word from the display.
+
+phrases:
+  "mujhe {x} chahiye": "I want {x}"
+  "humein {x} chahiye": "we want {x}"
+  "hume {x} chahiye": "we want {x}"
+  "{x} nahi chahiye": "I do not want {x}"
+  "nahi chahiye": "I do not want it"
+  "thats all": "that is all"
+  "thats it": "that is it"
+  "{x} chahiye": "I want {x}"
+  "mujhe {x} dena": "give me {x}"
+  "{x} dena": "give me {x}"
+  "{x} de do": "give me {x}"
+  "{x} dedo": "give me {x}"
+  "{x} dijiye": "give me {x}"
+  "{x} bhej do": "send {x}"
+  "{x} pack kar do": "pack {x}"
+  "{x} add karo": "add {x}"
+  "{x} add kar do": "add {x}"
+  "nahi wo hata do": "no remove that"
+  "wo hata do": "remove that"
+  "{x} hata do": "remove {x}"
+  "hata do": "remove it"
+  "{x} kitne ka hai": "how much is {x}"
+  "{x} kitne ki hai": "how much is {x}"
+  "{x} ka rate kya hai": "what is the price of {x}"
+  "{x} milega": "is {x} available"
+  "{x} available hai": "is {x} available"
+  "{x} hai kya": "is there {x}"
+  "mera naam {x} hai": "my name is {x}"
+  "naam {x} hai": "my name is {x}"
+  "mera number {x} hai": "my number is {x}"
+  "mera number {x}": "my number is {x}"
+  "mera order repeat karo": "repeat my order"
+  "order repeat karo": "repeat the order"
+  "order cancel kar do": "cancel the order"
+  "bas itna hi chahiye": "that is all"
+  "bas itna hi hai": "that is all"
+  "bas itna hi": "that is all"
+  "bas ho gaya": "that is all"
+  "itna hi": "that is all"
+  "ho gaya": "that is all"
+  "aur kuch nahi": "nothing else"
+  "haan theek hai": "yes okay"
+  "haan ji": "yes"
+  "ji haan": "yes"
+  "theek hai": "okay"
+  "nahi rehne do": "no leave it"
+  "nahi rahne do": "no leave it"
+  "rehne do": "leave it"
+  "rahne do": "leave it"
+  "pehla wala": "the first one"
+  "pehle wala": "the first one"
+  "doosra wala": "the second one"
+  "dusra wala": "the second one"
+  "teesra wala": "the third one"
+  "kya accha hai": "what is good"
+  "aaj special kya hai": "what is special today"
+  "thoda jaldi": "a bit quickly"
+  "jaldi karna": "please hurry"
+
+words:
+  aur: and
+  bhi: too
+  bas: that is all
+  haan: "yes"
+  ha: "yes"
+  nahi: "no"
+  bilkul: sure
+  chalega: that works
+  accha: okay
+  acha: okay
+  achha: okay
+  namaste: hello
+  namaskar: hello
+  dhanyavaad: thank you
+  shukriya: thank you
+  wo: that
+  woh: that
+  vo: that
+  ye: this
+  yeh: this
+  kya: what
+  hai: ""
+  thanda: ""
+  garam: hot
+  aaj: today
+  abhi: now
+  jaldi: quickly
+  thoda: a little
+  zyada: more
+  kam: less
+  saath: with
+  ke: ""
+  ka: ""
+  ki: ""
+  wala: ""
+  wali: ""
+  bhaiya: ""
+  ji: ""
+  toh: ""
+  matlab: ""
+  yaar: ""
+  sir: ""
+  please: please
+  do: ""

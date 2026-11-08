@@ -1,0 +1,49 @@
+/* Design tokens: heritage fine dining. The app reads like a grand Indian restaurant's menu: ivory paper,
+   deep maroon ink, antique gold rules and ornaments. Colours are RGB triplets so Tailwind can apply alpha.
+   Token names are kept from the first identity so every screen follows the theme: `indigo` is the
+   primary (maroon), `haldi` is the antique gold. Class colours mean one thing everywhere:
+   leaf = Stars, plow = Plowhorses, plum = Puzzles, chilli = Dogs. Gold marks money gained. */
+:root {
+  --plate: 247 241 227;     /* ivory: app background */
+  --card: 255 251 242;      /* cream: panels, cards */
+  --ink: 43 26 23;          /* deep brown-black: text, rules */
+  --muted: 112 92 84;
+  --line: 222 208 184;      /* warm hairline */
+  --indigo: 122 31 43;      /* maroon: primary actions, links, active nav */
+  --on-indigo: 255 248 235;
+  --haldi: 184 137 43;      /* antique gold: ornaments, rules, highlights behind text, money gained */
+  --gold-ink: 133 97 26;    /* gold for text on ivory (5:1, WCAG AA); --haldi is too light for small text */
+  --chilli: 179 38 30;
+  --leaf: 47 107 63;
+  --plow: 62 106 138;
+  --plum: 107 58 107;
+  --paper: 255 253 246;     /* the printed ticket */
+  --paper-ink: 43 26 23;
+  --slot: 42 20 20;
+
+  --r-sm: 2px;
+  --r-md: 4px;
+
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+  --dur-layout: 420ms;
+  --dur-feed: 900ms;
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+}
+
+[data-theme="dark"] {
+  --plate: 26 15 16;        /* maroon-black */
+  --card: 37 23 24;
+  --ink: 243 233 214;       /* candlelit ivory */
+  --muted: 191 174 152;
+  --line: 74 52 48;
+  --indigo: 217 178 106;    /* gold becomes the primary on dark */
+  --on-indigo: 26 15 16;
+  --haldi: 201 160 79;
+  --gold-ink: 201 160 79;   /* on maroon-black the bright gold already reads at 7.7:1 */
+  --chilli: 233 122 110;
+  --leaf: 127 191 142;
+  --plow: 141 179 214;
+  --plum: 199 150 199;
+  --slot: 8 4 4;
+}

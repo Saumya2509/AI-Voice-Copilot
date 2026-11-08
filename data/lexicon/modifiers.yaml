@@ -1,0 +1,33 @@
+# Modifier vocabulary. Each phrase maps to a modifier group and value from the menu.
+# `exclusions` become line notes ("no onion"); they are not priced modifiers.
+
+size:
+  Half: [half, aadha, adha, आधा, hafl, chhota, chota, छोटा, small]
+  Full: [full, poora, pura, पूरा, bada, bara, बड़ा, large, regular]
+
+spice:
+  Mild: [mild, kam teekha, kam tikha, kam mirch, less spicy, कम तीखा, halka, bina mirch, not spicy]
+  Medium: [medium, medium spicy, normal spicy, theek teekha, मीडियम, beech ka]
+  Spicy: [spicy, extra spicy, zyada teekha, jyada teekha, tez, teekha, तीखा, ज़्यादा तीखा, hot and spicy]
+
+addons:
+  Extra Paneer: [extra paneer, paneer extra, zyada paneer, एक्स्ट्रा पनीर]
+  Extra Raita: [extra raita, raita extra, raita on the side, एक्स्ट्रा रायता]
+  Extra Salan: [extra salan, salan extra, extra gravy]
+  Add Ice Cream: [with ice cream, ice cream ke saath, add ice cream, आइसक्रीम के साथ]
+  Extra Butter: [extra butter, zyada butter, makhan zyada, extra makhan]
+  Extra Cheese: [extra cheese, cheese extra, zyada cheese, extra cheez]
+
+exclusions:
+  onion: [bina pyaaz, bina pyaz, bina kanda, no onion, without onion, pyaaz mat, pyaaz ke bina, pyaaz nahi, प्याज़ नहीं, बिना प्याज, प्याज़ के बिना]
+  garlic: [bina lahsun, no garlic, without garlic, lehsun nahi, lahsun ke bina, बिना लहसुन]
+  onion and garlic: [jain, no onion no garlic, bina pyaaz lahsun]
+  coriander: [bina dhaniya, no coriander, dhaniya mat]
+  ice: [bina barf, no ice, without ice, barf mat]
+  sugar: [bina cheeni, no sugar, sugar free, cheeni mat, बिना चीनी]
+  butter: [bina butter, no butter, without butter, makhan mat]
+
+# Connectors that introduce an exclusion or modification.
+connectors:
+  without: [bina, without, no, mat, nahi, बिना, नहीं]
+  with: [with, ke saath, ke sath, aur, wala, wali, के साथ]

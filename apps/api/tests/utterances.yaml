@@ -1,0 +1,373 @@
+# Voice test set (file 09). Each case: text, cart_before (item names), expected intent, and
+# either `items` (accepted items with qty and optional modifiers/notes) or `clarify` (options
+# that must be offered). Run from apps/api:  python -m nlu.evaluate
+
+# --- starter cases from the spec -------------------------------------------------------
+- text: "ek paneer butter masala aur chaar butter naan"
+  en: "1 Paneer Butter Masala and 4 Butter Naan"
+  intent: add_item
+  items: [{name: Paneer Butter Masala, qty: 1}, {name: Butter Naan, qty: 4}]
+- text: "mujhe do dal makhani chahiye medium spicy"
+  en: "I want 2 Dal Makhani medium spicy"
+  intent: add_item
+  items: [{name: Dal Makhani, qty: 2, modifiers: ["Spice:Medium"]}]
+- text: "paneer masala dena"
+  en: "Give me paneer masala"
+  intent: add_item
+  clarify: [Paneer Butter Masala, Paneer Tikka Masala]
+- text: "पनीर बटर मसाला और दो रोटी"
+  en: "Paneer Butter Masala and 2 Tandoori Roti"
+  intent: add_item
+  items: [{name: Paneer Butter Masala, qty: 1}, {name: Tandoori Roti, qty: 2}]
+- text: "one veg biryani with extra raita"
+  en: "1 Veg Biryani with extra raita"
+  intent: add_item
+  items: [{name: Veg Biryani, qty: 1, modifiers: ["Add-ons:Extra Raita"]}]
+- text: "bina pyaaz ke"
+  en: "No onion"
+  cart_before: [Paneer Butter Masala]
+  intent: modify_item
+  loose: ["exclusion:onion"]
+- text: "nahi wo hata do"
+  en: "No remove that"
+  cart_before: [Paneer Butter Masala, Butter Naan]
+  intent: remove_item
+- text: "bas itna hi"
+  en: "That is all"
+  cart_before: [Dal Makhani]
+  intent: finalize
+- text: "haan theek hai"
+  en: "Yes okay"
+  intent: confirm
+- text: "nahi rehne do"
+  en: "No leave it"
+  intent: deny
+- text: "makhni dal ek"
+  en: "1 Dal Makhani"
+  intent: add_item
+  items: [{name: Dal Makhani, qty: 1}]
+- text: "do glass thanda cold coffee"
+  en: "2 glass thanda Cold Coffee"
+  intent: add_item
+  items: [{name: Cold Coffee, qty: 2}]
+
+# --- adding items: English ----------------------------------------------------------------
+- text: "i would like two chicken biryani"
+  en: "I would like 2 Chicken Biryani"
+  intent: add_item
+  items: [{name: Chicken Biryani, qty: 2}]
+- text: "can i get one butter chicken and three garlic naan"
+  en: "Can I get 1 Butter Chicken and 3 Garlic Naan"
+  intent: add_item
+  items: [{name: Butter Chicken, qty: 1}, {name: Garlic Naan, qty: 3}]
+- text: "a plate of hakka noodles please"
+  en: "1 plate of Hakka Noodles please"
+  intent: add_item
+  items: [{name: Hakka Noodles, qty: 1}]
+- text: "add one mango lassi"
+  en: "Add 1 Mango Lassi"
+  intent: add_item
+  items: [{name: Mango Lassi, qty: 1}]
+- text: "four tandoori roti and a dal tadka"
+  en: "4 Tandoori Roti and 1 Dal Tadka"
+  intent: add_item
+  items: [{name: Tandoori Roti, qty: 4}, {name: Dal Tadka, qty: 1}]
+- text: "give me a gulab jamun"
+  en: "Give me 1 Gulab Jamun"
+  intent: add_item
+  items: [{name: Gulab Jamun, qty: 1}]
+- text: "one half tandoori chicken"
+  en: "1 half Tandoori Chicken"
+  intent: add_item
+  items: [{name: Tandoori Chicken, qty: 1, modifiers: ["Size:Half"]}]
+- text: "a cold coffee with ice cream"
+  en: "1 Cold Coffee with ice cream"
+  intent: add_item
+  items: [{name: Cold Coffee, qty: 1, modifiers: ["Add-ons:Add Ice Cream"]}]
+- text: "two veg fried rice and one chilli paneer"
+  en: "2 Veg Fried Rice and 1 Chilli Paneer"
+  intent: add_item
+  items: [{name: Veg Fried Rice, qty: 2}, {name: Chilli Paneer, qty: 1}]
+- text: "one fresh lime soda"
+  en: "1 Fresh Lime Soda"
+  intent: add_item
+  items: [{name: Fresh Lime Soda, qty: 1}]
+- text: "a dozen tandoori roti"
+  en: "12 Tandoori Roti"
+  intent: add_item
+  items: [{name: Tandoori Roti, qty: 12}]
+- text: "one kadai paneer extra spicy"
+  en: "1 Kadai Paneer spicy"
+  intent: add_item
+  items: [{name: Kadai Paneer, qty: 1, modifiers: ["Spice:Spicy"]}]
+
+# --- adding items: Hinglish -------------------------------------------------------------
+- text: "teen garlic naan aur ek jeera rice"
+  en: "3 Garlic Naan and 1 Jeera Rice"
+  intent: add_item
+  items: [{name: Garlic Naan, qty: 3}, {name: Jeera Rice, qty: 1}]
+- text: "ek shahi paneer dena bhaiya"
+  en: "Give me 1 Shahi Paneer"
+  intent: add_item
+  items: [{name: Shahi Paneer, qty: 1}]
+- text: "do chicken tikka aur ek masala papad"
+  en: "2 Chicken Tikka and 1 Masala Papad"
+  intent: add_item
+  items: [{name: Chicken Tikka, qty: 2}, {name: Masala Papad, qty: 1}]
+- text: "ek veg thali bhi add karo"
+  en: "Add 1 Veg Thali too"
+  intent: add_item
+  items: [{name: Veg Thali, qty: 1}]
+- text: "paanch tandoori roti chahiye"
+  en: "I want 5 Tandoori Roti"
+  intent: add_item
+  items: [{name: Tandoori Roti, qty: 5}]
+- text: "ek chhole aur do lachha paratha"
+  en: "1 Chana Masala and 2 Lachha Paratha"
+  intent: add_item
+  items: [{name: Chana Masala, qty: 1}, {name: Lachha Paratha, qty: 2}]
+- text: "do plate veg manchurian kam teekha"
+  en: "2 plate Veg Manchurian mild"
+  intent: add_item
+  items: [{name: Veg Manchurian, qty: 2, modifiers: ["Spice:Mild"]}]
+- text: "ek malai kofta bina lahsun"
+  en: "1 Malai Kofta no garlic"
+  intent: add_item
+  items: [{name: Malai Kofta, qty: 1, notes: ["no garlic"]}]
+- text: "chaar sweet lassi aur do chaas"
+  en: "4 Sweet Lassi and 2 Masala Chaas"
+  intent: add_item
+  items: [{name: Sweet Lassi, qty: 4}, {name: Masala Chaas, qty: 2}]
+- text: "aadha tandoori chicken dena"
+  en: "Give me half Tandoori Chicken"
+  intent: add_item
+  items: [{name: Tandoori Chicken, qty: 1, modifiers: ["Size:Half"]}]
+- text: "ek rasmalai aur ek gajar halwa"
+  en: "1 Rasmalai and 1 Gajar Halwa"
+  intent: add_item
+  items: [{name: Rasmalai, qty: 1}, {name: Gajar Halwa, qty: 1}]
+- text: "ek hara bhara kabab"
+  en: "1 Hara Bhara Kabab"
+  intent: add_item
+  items: [{name: Hara Bhara Kabab, qty: 1}]
+
+# --- adding items: Hindi (Devanagari) and mixed script --------------------------------
+- text: "दो दाल मखनी और चार बटर नान"
+  en: "2 Dal Makhani and 4 Butter Naan"
+  intent: add_item
+  items: [{name: Dal Makhani, qty: 2}, {name: Butter Naan, qty: 4}]
+- text: "एक चिकन बिरयानी"
+  en: "1 Chicken Biryani"
+  intent: add_item
+  items: [{name: Chicken Biryani, qty: 1}]
+- text: "तीन गुलाब जामुन"
+  en: "3 Gulab Jamun"
+  intent: add_item
+  items: [{name: Gulab Jamun, qty: 3}]
+- text: "एक कड़ाही पनीर ज़्यादा तीखा"
+  en: "1 Kadai Paneer spicy"
+  intent: add_item
+  items: [{name: Kadai Paneer, qty: 1, modifiers: ["Spice:Spicy"]}]
+- text: "ek पनीर टिक्का aur do lassi"
+  en: "1 Paneer Tikka and 2 Sweet Lassi"
+  intent: add_item
+  items: [{name: Paneer Tikka, qty: 1}, {name: Sweet Lassi, qty: 2}]
+
+# --- noise: fillers, repeats, misspellings, number words --------------------------------
+- text: "um haan bhaiya ek dal tadka please"
+  en: "Yes 1 Dal Tadka please"
+  intent: add_item
+  items: [{name: Dal Tadka, qty: 1}]
+- text: "accha toh ek ek butter naan"
+  en: "Okay 1 Butter Naan"
+  intent: add_item
+  items: [{name: Butter Naan, qty: 1}]
+- text: "chiken biriyani do"
+  en: "Chicken Biryani"
+  intent: add_item
+  items: [{name: Chicken Biryani, qty: 1}]
+- text: "panner butter masla ek"
+  en: "1 Paneer Butter Masala"
+  intent: add_item
+  items: [{name: Paneer Butter Masala, qty: 1}]
+- text: "do garlik naan"
+  en: "2 Garlic Naan"
+  intent: add_item
+  items: [{name: Garlic Naan, qty: 2}]
+- text: "kadhai panir"
+  en: "Kadai Paneer"
+  intent: add_item
+  items: [{name: Kadai Paneer, qty: 1}]
+- text: "dedh plate tandoori chicken"
+  en: "1.5 plate Tandoori Chicken"
+  intent: add_item
+  items: [{name: Tandoori Chicken, qty: 1.5}]
+- text: "sir matlab do do mango lassi"
+  en: "2 Mango Lassi"
+  intent: add_item
+  items: [{name: Mango Lassi, qty: 2}]
+- text: "ek extra cheese dal makhani"
+  en: "1 extra cheese Dal Makhani"
+  intent: add_item
+  items: [{name: Dal Makhani, qty: 1}]
+  problems: 1
+
+# --- ambiguity -------------------------------------------------------------------------
+- text: "naan dena"
+  en: "Give me naan"
+  intent: add_item
+  clarify: [Butter Naan, Garlic Naan]
+- text: "one butter"
+  en: "1 butter"
+  intent: add_item
+  clarify: [Butter Naan, Butter Chicken]
+- text: "ek paneer"
+  en: "1 paneer"
+  intent: add_item
+  clarify: [Paneer Tikka, Paneer Butter Masala]
+- text: "some rice"
+  en: "Some rice"
+  intent: add_item
+  clarify: [Steamed Rice, Jeera Rice]
+
+# --- remove / modify -------------------------------------------------------------------
+- text: "remove the garlic naan"
+  en: "Remove the Garlic Naan"
+  cart_before: [Dal Makhani, Garlic Naan]
+  intent: remove_item
+- text: "butter naan hata do"
+  en: "Remove Butter Naan"
+  cart_before: [Butter Naan, Dal Makhani]
+  intent: remove_item
+- text: "वो हटा दो"
+  en: "Remove that"
+  cart_before: [Dal Tadka]
+  intent: remove_item
+- text: "make it less spicy"
+  en: "Make it mild"
+  cart_before: [Kadai Paneer]
+  intent: modify_item
+  loose: ["spice:Mild"]
+- text: "no onion please"
+  en: "No onion please"
+  cart_before: [Dal Makhani]
+  intent: modify_item
+  loose: ["exclusion:onion"]
+- text: "kadai paneer kam teekha"
+  en: "Kadai Paneer mild"
+  cart_before: [Kadai Paneer]
+  intent: modify_item
+
+# --- confirm / deny / finalize ---------------------------------------------------------
+- text: "yes please"
+  en: "Yes please"
+  intent: confirm
+- text: "हाँ ठीक है"
+  en: "Yes okay"
+  intent: confirm
+- text: "ok go ahead"
+  en: "Ok go ahead"
+  intent: confirm
+- text: "bilkul"
+  en: "Bilkul"
+  intent: confirm
+- text: "no thanks"
+  en: "No thanks"
+  intent: deny
+- text: "नहीं रहने दो"
+  en: "No leave it"
+  intent: deny
+- text: "nahi chahiye"
+  en: "I do not want it"
+  intent: deny
+- text: "that's all"
+  en: "That is all"
+  cart_before: [Butter Chicken]
+  intent: finalize
+- text: "बस इतना ही"
+  en: "That is all"
+  cart_before: [Butter Chicken]
+  intent: finalize
+- text: "aur kuch nahi"
+  en: "Nothing else"
+  cart_before: [Butter Chicken]
+  intent: finalize
+
+# --- details and questions -------------------------------------------------------------
+- text: "mera naam Rohan hai"
+  en: "My name is Rohan"
+  intent: give_name
+- text: "my name is Priya Sharma"
+  en: "My name is Priya Sharma"
+  intent: give_name
+- text: "mera number 98123 45610 hai"
+  en: "My number is 98123 45610"
+  intent: give_phone
+- text: "nine eight seven six five four three two one zero"
+  en: "9 8 7 6 5 4 3 2 1 0"
+  intent: give_phone
+- text: "dal makhani kitne ka hai"
+  en: "How much is Dal Makhani"
+  intent: ask_price
+- text: "how much is the butter chicken"
+  en: "How much is the Butter Chicken"
+  intent: ask_price
+- text: "rasmalai milega"
+  en: "Is Rasmalai available"
+  intent: ask_availability
+- text: "do you have cold coffee"
+  en: "Do you have Cold Coffee"
+  intent: ask_availability
+- text: "kya accha hai aaj"
+  en: "What is good today"
+  intent: ask_recommendation
+- text: "what do you recommend"
+  en: "What do you recommend"
+  intent: ask_recommendation
+- text: "mera order repeat karo"
+  en: "Repeat my order"
+  intent: repeat_order
+- text: "cancel the order"
+  en: "Cancel the order"
+  intent: cancel
+- text: "hello"
+  en: "Hello"
+  intent: greet
+- text: "namaste ji"
+  en: "Hello"
+  intent: greet
+
+# --- what the offline recogniser writes: number homophones, split words, Devanagari ----------
+- text: "i want to butter naan and one dal makhani"
+  intent: add_item
+  items: [{name: Butter Naan, qty: 2}, {name: Dal Makhani, qty: 1}]
+- text: "give me for garlic naan"
+  intent: add_item
+  items: [{name: Garlic Naan, qty: 4}]
+- text: "paneer butter masala one and jeera rice to"
+  intent: add_item
+  items: [{name: Paneer Butter Masala, qty: 1}, {name: Jeera Rice, qty: 2}]
+- text: "accha to butter naan"
+  intent: add_item
+  items: [{name: Butter Naan, qty: 1}]
+- text: "what is the price for butter chicken"
+  intent: ask_price
+- text: "two butter non"
+  intent: add_item
+  items: [{name: Butter Naan, qty: 2}]
+- text: "one dal mukhani"
+  intent: add_item
+  items: [{name: Dal Makhani, qty: 1}]
+- text: "one ras malai and two kulfi"
+  intent: add_item
+  items: [{name: Rasmalai, qty: 1}, {name: Kulfi, qty: 2}]
+- text: "तीन तंदूरी रोटी और एक दाल तड़का"
+  intent: add_item
+  items: [{name: Tandoori Roti, qty: 3}, {name: Dal Tadka, qty: 1}]
+- text: "मुझे दो गार्लिक नान चाहिए"
+  intent: add_item
+  items: [{name: Garlic Naan, qty: 2}]
+- text: "that is it"
+  intent: finalize
+- text: "no that's it thank you"
+  intent: finalize

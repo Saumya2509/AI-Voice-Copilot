@@ -1,0 +1,22 @@
+id: hindi-change-of-mind
+title: Hindi with a change of mind
+description: An item removed, a spice change, one declined offer.
+language: hi
+utterances:
+  - {at: 0.0, text: "नमस्ते"}
+  - {at: 3.0, text: "एक कड़ाही पनीर और तीन तंदूरी रोटी"}
+  - {at: 8.0, text: "एक दाल तड़का भी"}
+  - {at: 11.0, text: "नहीं वो हटा दो"}
+  - {at: 14.0, text: "कड़ाही पनीर कम तीखा"}
+  - {at: 18.0, text: "बस इतना ही"}
+  - {at: 22.0, text: "नहीं रहने दो"}
+  - {at: 27.0, text: "हाँ ठीक है"}
+  - {at: 30.0, text: "मेरा नाम प्रिया है"}
+  - {at: 34.0, text: "मेरा नंबर 98765 43210 है"}
+expect:
+  outcome: ordered
+  offers_shown: 1
+  offers_accepted: 0
+  items: {Kadai Paneer: 1, Tandoori Roti: 3}
+  absent: [Dal Tadka]
+  modifiers: {Kadai Paneer: ["Spice:Mild"]}

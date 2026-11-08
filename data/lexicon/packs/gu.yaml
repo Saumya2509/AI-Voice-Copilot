@@ -1,0 +1,52 @@
+# Gujarati language pack (optional). Same structure as the core lexicon files.
+# Merged at start-up when enabled in Settings.
+language: gu
+label: Gujarati
+
+aliases:
+  Steamed Rice: [bhaat, ભાત]
+  Tandoori Roti: [rotli, રોટલી, roti]
+  Masala Chaas: [chaas, છાશ, chhaas]
+  Dal Tadka: [daal, દાળ]
+  Green Salad: [salad, સલાડ]
+  Gulab Jamun: [gulab jambu, ગુલાબ જાંબુ]
+
+numbers:
+  ek: 1
+  એક: 1
+  be: 2
+  બે: 2
+  tran: 3
+  ત્રણ: 3
+  chaar: 4
+  ચાર: 4
+  paanch: 5
+  પાંચ: 5
+  chha: 6
+  છ: 6
+  saat: 7
+  aath: 8
+  nav: 9
+  das: 10
+  દસ: 10
+  adhu: 0.5
+  અડધું: 0.5
+  dodh: 1.5
+  દોઢ: 1.5
+  adhi: 2.5
+  અઢી: 2.5
+
+modifiers:
+  spice:
+    Mild: [ochhu tikhu, ઓછું તીખું]
+    Spicy: [vadhare tikhu, વધારે તીખું, tikhu]
+  exclusions:
+    onion: [dungri vagar, ડુંગળી વગર, kanda vagar]
+    garlic: [lasan vagar, લસણ વગર]
+
+fillers: [haa, હા, bhai, ભાઈ, etle, એટલે, jo, જો, ben]
+
+intents:
+  finalize: [bas aatlu, બસ આટલું, aatlu j]
+  confirm: [haa chalse, હા ચાલશે, chalse, barabar]
+  deny: [na, ના, rehva do, રહેવા દો]

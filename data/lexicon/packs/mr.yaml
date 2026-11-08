@@ -1,0 +1,51 @@
+# Marathi language pack (optional). Same structure as the core lexicon files.
+# Merged at start-up when enabled in Settings.
+language: mr
+label: Marathi
+
+aliases:
+  Steamed Rice: [bhaat, भात, sadha bhaat]
+  Tandoori Roti: [poli, पोळी, chapati]
+  Masala Chaas: [taak, ताक, mattha]
+  Dal Tadka: [varan, वरण, dal fry]
+  Green Salad: [koshimbir, कोशिंबीर]
+
+numbers:
+  ek: 1
+  एक: 1
+  don: 2
+  दोन: 2
+  teen: 3
+  तीन: 3
+  chaar: 4
+  चार: 4
+  paach: 5
+  पाच: 5
+  saha: 6
+  सहा: 6
+  saat: 7
+  aath: 8
+  nau: 9
+  daha: 10
+  दहा: 10
+  ardha: 0.5
+  अर्धा: 0.5
+  deedh: 1.5
+  दीड: 1.5
+  adich: 2.5
+  अडीच: 2.5
+
+modifiers:
+  spice:
+    Mild: [kami tikhat, कमी तिखट]
+    Spicy: [jaast tikhat, जास्त तिखट, tikhat]
+  exclusions:
+    onion: [kanda nako, कांदा नको, binā kanda]
+    garlic: [lasun nako, लसूण नको]
+
+fillers: [ho, हो, bara, बरं, mhanje, म्हणजे, na, ना, dada, दादा, kaka]
+
+intents:
+  finalize: [bas evdhach, बस एवढंच, evdhach, zhala]
+  confirm: [ho chalel, हो चालेल, chalel, theek aahe]
+  deny: [nako, नको, rahu dya, राहू द्या]

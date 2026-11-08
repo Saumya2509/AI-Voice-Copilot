@@ -1,0 +1,362 @@
+{
+  "Boondi Raita": {
+    "file": "/dishes/boondi-raita.webp",
+    "title": "Boondi Raita.jpg",
+    "author": "Ravi Dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boondi_Raita.jpg"
+  },
+  "Butter Chicken": {
+    "file": "/dishes/butter-chicken.webp",
+    "title": "Chicken makhani.jpg",
+    "author": "stu_spivack",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chicken_makhani.jpg"
+  },
+  "Butter Naan": {
+    "file": "/dishes/butter-naan.webp",
+    "title": "Butter Naan Flatbread from North India.jpg",
+    "author": "Ravi Dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Butter_Naan_Flatbread_from_North_India.jpg"
+  },
+  "Chana Masala": {
+    "file": "/dishes/chana-masala.webp",
+    "title": "Chana Masala - Mohammed - Spice Of Life 2024-05-27.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Chana_Masala_-_Mohammed_-_Spice_Of_Life_2024-05-27.jpg"
+  },
+  "Cheese Naan": {
+    "file": "/dishes/cheese-naan.webp",
+    "title": "Cheese naan of Gokarna IMG 20181203 131623.jpg",
+    "author": "Ambadyanands",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cheese_naan_of_Gokarna_IMG_20181203_131623.jpg"
+  },
+  "Chicken Biryani": {
+    "file": "/dishes/chicken-biryani.webp",
+    "title": "Chicken Dum Biryani 03.jpg",
+    "author": "Vis M",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chicken_Dum_Biryani_03.jpg"
+  },
+  "Chicken Curry": {
+    "file": "/dishes/chicken-curry.webp",
+    "title": "Chicken Curry (490198749).jpg",
+    "author": "rovingI",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chicken_Curry_(490198749).jpg"
+  },
+  "Chicken Tikka": {
+    "file": "/dishes/chicken-tikka.webp",
+    "title": "Chicken tikka in Araku Valley, Andhra Pradesh 01.jpg",
+    "author": "Satdeep Gill",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_in_Araku_Valley,_Andhra_Pradesh_01.jpg"
+  },
+  "Chilli Paneer": {
+    "file": "/dishes/chilli-paneer.webp",
+    "title": "Chilly Paneer 01.jpg",
+    "author": "Marajozkee",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chilly_Paneer_01.jpg"
+  },
+  "Cold Coffee": {
+    "file": "/dishes/cold-coffee.webp",
+    "title": "Cold Coffee 2.jpg",
+    "author": "Gannu03",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cold_Coffee_2.jpg"
+  },
+  "Cold Drink": {
+    "file": "/dishes/cold-drink.webp",
+    "title": "Glass cola.jpg",
+    "author": "pic_p_ter",
+    "license": "Public domain",
+    "license_url": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Glass_cola.jpg"
+  },
+  "Crispy Corn": {
+    "file": "/dishes/crispy-corn.webp",
+    "title": "Crispy corn made by me.jpg",
+    "author": "YKanchan07",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Crispy_corn_made_by_me.jpg"
+  },
+  "Dal Makhani": {
+    "file": "/dishes/dal-makhani.webp",
+    "title": "Dal Makhani.jpg",
+    "author": "Charles Haynes",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dal_Makhani.jpg"
+  },
+  "Dal Tadka": {
+    "file": "/dishes/dal-tadka.webp",
+    "title": "Dal Tadka-Delhi.jpg",
+    "author": "AugustineKajur",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dal_Tadka-Delhi.jpg"
+  },
+  "Fresh Lime Soda": {
+    "file": "/dishes/fresh-lime-soda.webp",
+    "title": "Nimbu Soda Or Lemon Soda.jpg",
+    "author": "Manjeshwari poet mysore",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nimbu_Soda_Or_Lemon_Soda.jpg"
+  },
+  "Gajar Halwa": {
+    "file": "/dishes/gajar-halwa.webp",
+    "title": "Delicious Gajar Ka Halwa.jpg",
+    "author": "Sharvarism",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Delicious_Gajar_Ka_Halwa.jpg"
+  },
+  "Garlic Naan": {
+    "file": "/dishes/garlic-naan.webp",
+    "title": "Garlic naan 1.jpg",
+    "author": "Joy",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Garlic_naan_1.jpg"
+  },
+  "Green Salad": {
+    "file": "/dishes/green-salad.webp",
+    "title": "Indian Vegetable Salad.jpg",
+    "author": "P.Periyannan TRYPPN (talk) (Transfered by \n\nebraminio/Original uploaded by TRYPPN)",
+    "license": "Public domain",
+    "license_url": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Indian_Vegetable_Salad.jpg"
+  },
+  "Gulab Jamun": {
+    "file": "/dishes/gulab-jamun.webp",
+    "title": "Two Gulab Jamun in a plate 01.jpg",
+    "author": "Suyash.dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Two_Gulab_Jamun_in_a_plate_01.jpg"
+  },
+  "Hakka Noodles": {
+    "file": "/dishes/hakka-noodles.webp",
+    "title": "Tasty hakka noodles image.jpg",
+    "author": "SGUae",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tasty_hakka_noodles_image.jpg"
+  },
+  "Hara Bhara Kabab": {
+    "file": "/dishes/hara-bhara-kabab.webp",
+    "title": "Hara bhara kabab-.JPG",
+    "author": "Kanikatwl",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hara_bhara_kabab-.JPG"
+  },
+  "Jeera Rice": {
+    "file": "/dishes/jeera-rice.webp",
+    "title": "Jeera-rice.JPG",
+    "author": "Sonia Goyal",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jeera-rice.JPG"
+  },
+  "Kadai Paneer": {
+    "file": "/dishes/kadai-paneer.webp",
+    "title": "Kadai paneer with garlic naan.jpg",
+    "author": "YKanchan07",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kadai_paneer_with_garlic_naan.jpg"
+  },
+  "Kulfi": {
+    "file": "/dishes/kulfi.webp",
+    "title": "Kulfi 3.jpg",
+    "author": "Gaurav Dhwaj Khadka",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kulfi_3.jpg"
+  },
+  "Lachha Paratha": {
+    "file": "/dishes/lachha-paratha.webp",
+    "title": "Lachha-paratha.jpg",
+    "author": "Sonia Goyal",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lachha-paratha.jpg"
+  },
+  "Malai Kofta": {
+    "file": "/dishes/malai-kofta.webp",
+    "title": "Malai Kofta Curry.jpg",
+    "author": "Mrudit161187",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Malai_Kofta_Curry.jpg"
+  },
+  "Mango Lassi": {
+    "file": "/dishes/mango-lassi.webp",
+    "title": "Mango Lassi and Butter Milk - Vel South Indian Kitchen + Bar.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Mango_Lassi_and_Butter_Milk_-_Vel_South_Indian_Kitchen_%2B_Bar.jpg"
+  },
+  "Masala Chaas": {
+    "file": "/dishes/masala-chaas.webp",
+    "title": "Masala Buttermilk.JPG",
+    "author": "Amarnujju",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Masala_Buttermilk.JPG"
+  },
+  "Masala Papad": {
+    "file": "/dishes/masala-papad.webp",
+    "title": "Masala Papad , The Ocean Pearl Hotel.jpg",
+    "author": "Yakshitha",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Masala_Papad_,_The_Ocean_Pearl_Hotel.jpg"
+  },
+  "Mix Veg": {
+    "file": "/dishes/mix-veg.webp",
+    "title": "Mixed vegetable curry 1.jpg",
+    "author": "Dolon Prova",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mixed_vegetable_curry_1.jpg"
+  },
+  "Paneer Butter Masala": {
+    "file": "/dishes/paneer-butter-masala.webp",
+    "title": "Paneer butter masala 2.jpg",
+    "author": "Gannu03",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paneer_butter_masala_2.jpg"
+  },
+  "Paneer Tikka": {
+    "file": "/dishes/paneer-tikka.webp",
+    "title": "Panir Tikka Indian cheese grilled.jpg",
+    "author": "Sonja Pauen -Stanhopea",
+    "license": "CC BY 2.0 de",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/de/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Panir_Tikka_Indian_cheese_grilled.jpg"
+  },
+  "Paneer Tikka Masala": {
+    "file": "/dishes/paneer-tikka-masala.webp",
+    "title": "Paneer Tikka Masala (2026) 01.jpg",
+    "author": "Gpkp",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paneer_Tikka_Masala_(2026)_01.jpg"
+  },
+  "Rasmalai": {
+    "file": "/dishes/rasmalai.webp",
+    "title": "Rasmalai with carrot.jpg",
+    "author": "Shreya13jain",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rasmalai_with_carrot.jpg"
+  },
+  "Schezwan Noodles": {
+    "file": "/dishes/schezwan-noodles.webp",
+    "title": "Schezwan noodles.jpg",
+    "author": "Gauvdhami",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Schezwan_noodles.jpg"
+  },
+  "Shahi Paneer": {
+    "file": "/dishes/shahi-paneer.webp",
+    "title": "Shahi Paneer & Butter Naan.jpg",
+    "author": "Shashank7200",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shahi_Paneer_%26_Butter_Naan.jpg"
+  },
+  "Sizzling Brownie": {
+    "file": "/dishes/sizzling-brownie.webp",
+    "title": "Sizzling Brownie with Ice Cream.JPG",
+    "author": "Aalokmjoshi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sizzling_Brownie_with_Ice_Cream.JPG"
+  },
+  "Steamed Rice": {
+    "file": "/dishes/steamed-rice.webp",
+    "title": "Steamed rice in bowl 01.jpg",
+    "author": "Anna Frodesiak",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Steamed_rice_in_bowl_01.jpg"
+  },
+  "Sweet Lassi": {
+    "file": "/dishes/sweet-lassi.webp",
+    "title": "Lassi 1.jpg",
+    "author": "Gaurav Dhwaj Khadka",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lassi_1.jpg"
+  },
+  "Tandoori Chicken": {
+    "file": "/dishes/tandoori-chicken.webp",
+    "title": "Tandoori chicken Indian.jpg",
+    "author": "pelican",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tandoori_chicken_Indian.jpg"
+  },
+  "Tandoori Roti": {
+    "file": "/dishes/tandoori-roti.webp",
+    "title": "Tandoori-rotis.jpg",
+    "author": "Ravi Dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tandoori-rotis.jpg"
+  },
+  "Veg Biryani": {
+    "file": "/dishes/veg-biryani.webp",
+    "title": "Dum veg biryani by fatima.jpg",
+    "author": "Fatimahope",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dum_veg_biryani_by_fatima.jpg"
+  },
+  "Veg Fried Rice": {
+    "file": "/dishes/veg-fried-rice.webp",
+    "title": "Vegetable fried rice from Kerala.jpg",
+    "author": "Ganesh Mohan T",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable_fried_rice_from_Kerala.jpg"
+  },
+  "Veg Manchurian": {
+    "file": "/dishes/veg-manchurian.webp",
+    "title": "Vegetable manchurian.jpg",
+    "author": "Msec109",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable_manchurian.jpg"
+  },
+  "Veg Thali": {
+    "file": "/dishes/veg-thali.webp",
+    "title": "Vegetarian Thali 4.jpg",
+    "author": "Ganesh Mohan T",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetarian_Thali_4.jpg"
+  }
+}

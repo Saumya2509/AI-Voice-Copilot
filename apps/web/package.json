@@ -1,0 +1,47 @@
+{
+  "name": "@tadka/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b --noEmit",
+    "shots": "node scripts/shots.mjs",
+    "test:ui": "node scripts/acceptance.mjs"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "@fontsource/mukta": "^5.1.0",
+    "@fontsource/rozha-one": "^5.1.0",
+    "@fontsource/share-tech-mono": "5.1.0",
+    "@phosphor-icons/react": "^2.1.7",
+    "d3-scale": "4.0.2",
+    "d3-shape": "3.2.0",
+    "motion": "11.11.17",
+    "papaparse": "^5.4.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.27.0",
+    "recharts": "2.13.0",
+    "vosk-browser": "0.0.8",
+    "zustand": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/d3-scale": "4.0.8",
+    "@types/d3-shape": "3.1.6",
+    "@types/papaparse": "^5.3.15",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "autoprefixer": "10.4.20",
+    "playwright": "1.48.1",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.6.3",
+    "vite": "5.4.10",
+    "vitest": "2.1.3"
+  }
+}

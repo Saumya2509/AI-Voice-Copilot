@@ -1,0 +1,4 @@
+# Words stripped before matching. Keep words that change meaning (nahi, bas, aur) out of this list.
+english: [um, umm, uh, uhh, hmm, er, like, please, pls, okay so, so, actually, basically, you know, sir, madam, maam, boss]
+roman_hindi: [haan, han, matlab, accha, acha, achha, toh, to, na, bhaiya, bhaiyya, bhai, ji, yaar, dekho, suniye, sunna, zara, thoda]
+devanagari: [हाँ, हां, मतलब, अच्छा, तो, ना, भैया, जी, यार, देखो, सुनिए, ज़रा]

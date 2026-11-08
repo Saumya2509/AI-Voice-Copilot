@@ -1,0 +1,21 @@
+id: hinglish-family-dinner
+title: Hinglish family dinner
+description: Four dishes, one clarification, one accepted offer, name and phone, confirmation.
+language: hinglish
+utterances:
+  - {at: 0.0, text: "namaste bhaiya"}
+  - {at: 3.5, text: "do dal makhani aur ek paneer masala dena"}
+  - {at: 8.0, text: "pehla wala"}
+  - {at: 11.5, text: "chaar butter naan aur ek veg biryani bhi"}
+  - {at: 16.0, text: "bas itna hi"}
+  - {at: 20.0, text: "haan theek hai"}
+  - {at: 26.0, text: "haan"}
+  - {at: 29.0, text: "mera naam Rohan hai"}
+  - {at: 33.0, text: "98123 45610"}
+expect:
+  outcome: ordered
+  clarifications: 1
+  offers_shown: 1
+  offers_accepted: 1
+  items: {Dal Makhani: 2, Butter Naan: 4, Veg Biryani: 1}
+  customer_items: 4

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tadka.local/schemas/kot.schema.json",
+  "title": "Kot",
+  "description": "Kitchen order ticket. Lines are grouped by station so each section of the kitchen sees its own work.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "kot_no",
+    "order_id",
+    "channel",
+    "created_at",
+    "customer",
+    "stations",
+    "lines",
+    "notes",
+    "total"
+  ],
+  "properties": {
+    "kot_no": {
+      "type": "string",
+      "pattern": "^K-[0-9]+$"
+    },
+    "order_id": {
+      "type": "string",
+      "pattern": "^ORD-[0-9]+$"
+    },
+    "channel": {
+      "enum": [
+        "dine_in",
+        "phone",
+        "takeaway"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 in UTC, for example 2026-10-11T13:42:08Z.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+    },
+    "customer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "phone"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{2}X+[0-9]{2}$"
+        }
+      }
+    },
+    "stations": {
+      "type": "array",
+      "description": "Station names in the order they appear in `lines`.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item",
+          "qty",
+          "mods",
+          "station"
+        ],
+        "properties": {
+          "item": {
+            "type": "string"
+          },
+          "qty": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "mods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "station": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "total": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

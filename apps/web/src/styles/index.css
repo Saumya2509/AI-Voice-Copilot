@@ -1,0 +1,141 @@
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/700.css";
+@import "@fontsource/cormorant-garamond/500-italic.css";
+@import "@fontsource/rozha-one/400.css";
+@import "@fontsource/mukta/400.css";
+@import "@fontsource/mukta/500.css";
+@import "@fontsource/mukta/700.css";
+@import "@fontsource/share-tech-mono/400.css";
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-plate text-ink font-sans antialiased;
+    font-variant-numeric: tabular-nums;
+    text-wrap: pretty;
+    /* A faint laid-paper grain, like a printed menu card. */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 0 0.1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  [data-theme="dark"] body { background-image: none; }
+  h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
+  /* Cormorant is a delicate face: headings take weight and a touch of tracking to hold their own. */
+  .font-display { font-weight: 600; letter-spacing: 0.005em; font-feature-settings: "liga", "kern", "lnum"; }
+  :focus-visible { outline: 2px solid rgb(var(--haldi)); outline-offset: 2px; border-radius: 2px; }
+  ::selection { background: rgb(var(--haldi) / 0.35); color: rgb(var(--ink)); }
+  html.theme-swap, html.theme-swap * {
+    transition: background-color 200ms var(--ease-out), border-color 200ms var(--ease-out),
+      color 200ms var(--ease-out), fill 200ms var(--ease-out), stroke 200ms var(--ease-out) !important;
+  }
+}
+
+@layer components {
+  .num { font-variant-numeric: tabular-nums; }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-4 h-10 text-sm font-medium
+      transition-colors duration-fast ease-out disabled:opacity-50 disabled:cursor-not-allowed select-none;
+  }
+  /* Maroon with a fine gold edge, like a menu's embossed seal. */
+  .btn-primary {
+    @apply btn bg-indigo text-on-indigo hover:bg-indigo/90 active:bg-indigo/80;
+    box-shadow: inset 0 0 0 1px rgb(var(--haldi) / 0.55), 0 1px 0 rgb(var(--ink) / 0.12);
+  }
+  .btn-secondary { @apply btn border border-haldi/70 text-ink bg-card/60 hover:border-indigo hover:bg-indigo/5 active:bg-indigo/10; }
+  .btn-quiet { @apply btn px-2 text-ink/80 hover:text-ink hover:bg-ink/5 active:bg-ink/10; }
+  .btn-danger { @apply btn border border-chilli text-chilli hover:bg-chilli hover:text-paper; }
+  .field {
+    @apply h-10 rounded-sm border border-haldi/45 bg-card px-3 text-sm text-ink placeholder:text-muted
+      hover:border-haldi focus:border-indigo transition-colors duration-fast;
+  }
+  .panel { @apply bg-card rounded-md border border-haldi/30 shadow-card; }
+  .label { @apply text-sm text-muted; }
+  /* Small spaced capitals above a heading, in gold. */
+  .eyebrow { @apply text-[11px] font-medium uppercase tracking-[0.2em] text-gold-ink; }
+  /* Page titles: a gold double hairline beneath, ending in a small ornament. */
+  .title-rule {
+    @apply relative pb-3 mb-7;
+    border-bottom: 1px solid rgb(var(--haldi));
+    box-shadow: 0 4px 0 -3px rgb(var(--haldi) / 0.55);
+  }
+  .title-rule::after {
+    content: "\2756"; position: absolute; left: 0; bottom: -0.62em; padding-right: 0.5em;
+    font-size: 0.8rem; line-height: 1; color: rgb(var(--haldi)); background: rgb(var(--plate));
+  }
+  /* Section headings on menu cards: gold double hairline above. */
+  .double-rule { border-top: 1px solid rgb(var(--haldi)); box-shadow: inset 0 3px 0 -2px rgb(var(--haldi) / 0.55); }
+  /* A centred ornamental divider: hairline, diamond, hairline. */
+  .ornament { @apply flex items-center gap-3 text-haldi; }
+  .ornament::before, .ornament::after { content: ""; @apply h-px flex-1 bg-haldi/60; }
+  /* Dotted leader between a name and a price, like a printed menu. */
+  .leader { @apply mx-2 mb-[0.35em] min-w-[1.5rem] flex-1 self-end border-b border-dotted border-haldi/70; }
+}
+
+/* Signage bands (landing hero, footer): deep maroon with ivory type in both themes, like a menu cover. */
+.heritage-band {
+  background-color: #4A121B;
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgb(255 255 255 / 0.07), transparent 55%),
+    radial-gradient(ellipse at 100% 100%, rgb(0 0 0 / 0.25), transparent 60%);
+  color: #F7F1E3;
+}
+
+/* The Call desk menu: one column, two once the panel is wide enough for a menu card spread. */
+.menu-panel { container: menu / inline-size; }
+.menu-cols { column-gap: 2.5rem; }
+@container menu (min-width: 660px) { .menu-cols { columns: 2; } }
+
+/* Veg and non-veg marks: the standard square with a green dot, or a brown triangle. */
+.veg-mark, .nonveg-mark {
+  display: inline-grid; place-items: center; width: 14px; height: 14px; border: 1.5px solid; border-radius: 2px;
+  flex-shrink: 0;
+}
+.veg-mark { border-color: rgb(var(--leaf)); }
+.veg-mark::after { content: ""; width: 6px; height: 6px; border-radius: 999px; background: rgb(var(--leaf)); }
+.nonveg-mark { border-color: #8B3A1E; }
+.nonveg-mark::after {
+  content: ""; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent;
+  border-bottom: 7px solid #8B3A1E;
+}
+[data-theme="dark"] .nonveg-mark { border-color: #E08A66; }
+[data-theme="dark"] .nonveg-mark::after { border-bottom-color: #E08A66; }
+
+/* The ticket: printed stock with a torn edge. */
+.ticket-torn {
+  -webkit-mask:
+    linear-gradient(#000 0 0) top / 100% calc(100% - 7px) no-repeat,
+    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 14px 7px repeat-x;
+  mask:
+    linear-gradient(#000 0 0) top / 100% calc(100% - 7px) no-repeat,
+    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 14px 7px repeat-x;
+}
+.ticket-torn-side {
+  -webkit-mask:
+    linear-gradient(#000 0 0) left / calc(100% - 7px) 100% no-repeat,
+    conic-gradient(from 45deg at right, #0000, #000 1deg 89deg, #0000 90deg) right / 7px 14px repeat-y;
+  mask:
+    linear-gradient(#000 0 0) left / calc(100% - 7px) 100% no-repeat,
+    conic-gradient(from 45deg at right, #0000, #000 1deg 89deg, #0000 90deg) right / 7px 14px repeat-y;
+}
+
+/* Table rows: hover shows a thin left bar in the row's class colour. */
+.row-star .row-bar { background: rgb(var(--leaf)); }
+.row-plowhorse .row-bar { background: rgb(var(--plow)); }
+.row-puzzle .row-bar { background: rgb(var(--plum)); }
+.row-dog .row-bar { background: rgb(var(--chilli)); }
+.row-none .row-bar { background: rgb(var(--ink) / 0.4); }
+
+/* Horizontal scrollers contain their absolutely positioned children (such as sr-only labels). */
+.overflow-x-auto { position: relative; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}
