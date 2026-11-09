@@ -1,0 +1,163 @@
+================================================================================
+TADKA // AI VOICE COPILOT & REVENUE ENGINE - PROJECT SHOWCASE INFO
+================================================================================
+(Formatted precisely to match the portfolio project card layout & data fields)
+
+--------------------------------------------------------------------------------
+1. TOP HEADER & METADATA
+--------------------------------------------------------------------------------
+CATEGORY TAG:
+VOICE AI & FULL-STACK SYSTEMS
+
+PROJECT ID / NUMBER:
+01 // TADKA VOICE COPILOT
+
+CARD HEADER BADGE:
+• 100% LOCAL // ~40MS
+
+CARD TITLE:
+TADKA (तड़का)
+
+CARD SUBTITLE:
+AI VOICE COPILOT & REVENUE ENGINE
+
+CARD TECH SUMMARY:
+React 18 • FastAPI • Vosk WASM • Piper TTS • SQLite • Vite
+
+
+--------------------------------------------------------------------------------
+2. SYSTEM ARCHITECTURE (LEFT PANEL)
+--------------------------------------------------------------------------------
+SECTION TITLE:
+SYSTEM ARCHITECTURE
+
+STATUS BADGE:
+• PRODUCTION READY
+
+CORE ARCHITECTURE:
+A high-throughput, offline-first voice conversational runtime and statistical revenue engine engineered for sub-second restaurant phone order intake in English, Hindi, and Hinglish. Built with WebAssembly Vosk speech recognition, local Piper neural acoustic synthesis, scikit-learn intent classification, and Apriori frequent-itemset affinity mining for zero-cloud, privacy-preserving POS order dispatch.
+
+KEY ENGINEERING HIGHLIGHTS:
+- Full-Duplex Multilingual NLU Pipeline: Real-time dialect code-switching parser handling colloquial Hinglish with dual-vocabulary phonetics, homophone disambiguation, and real-time English glossing at sub-5ms parse latency.
+- Autonomous Revenue & Menu Engineering Engine: Offline Apriori itemset mining (evaluating 12k+ orders in 0.25s) paired with a 4-quadrant BCG matrix (Stars, Plowhorses, Puzzles, Dogs) and empirical price elasticity guardrails to maximize average order value.
+- Deterministic POS & Kitchen Dispatch Subsystem: Zero-loss idempotent order queue generating standard thermal Kitchen Order Tickets (KOT) with sequential tracking, automatic retry backoff, and live Server-Sent Events (SSE) broadcast.
+
+ROLE:
+Lead Full-Stack & AI Systems Engineer
+
+TIMELINE:
+4 Weeks
+
+FOCUS:
+Multilingual Voice AI • Revenue Engineering • Local-First Systems • Restaurant POS
+
+
+--------------------------------------------------------------------------------
+3. SOURCE REPOSITORY & LINKS (RIGHT PANEL - TOP)
+--------------------------------------------------------------------------------
+SECTION TITLE:
+SOURCE REPOSITORY
+
+LICENSE BADGE:
+• OPEN SOURCE • MIT
+
+INSPECT SOURCE CODE LINK:
+https://github.com/Saumya2509/AI-Voice-Copilot
+
+DOCUMENTATION LINK:
+https://github.com/Saumya2509/AI-Voice-Copilot/blob/main/README.md
+
+GIT CLONE COMMAND:
+git clone https://github.com/Saumya2509/AI-Voice-Copilot.git
+
+
+--------------------------------------------------------------------------------
+4. CURATED TECH STACK (RIGHT PANEL - MIDDLE)
+--------------------------------------------------------------------------------
+SECTION TITLE:
+CURATED TECH STACK
+
+COUNT BADGE:
+8 CORE LIBRARIES
+
+LIBRARIES / FRAMEWORKS:
+1. React 18
+2. TypeScript
+3. FastAPI
+4. Vosk (Offline STT)
+5. Piper Neural TTS
+6. Scikit-Learn
+7. TailwindCSS
+8. SQLite (Paise-Exact)
+
+
+--------------------------------------------------------------------------------
+5. KEY METRICS & BENCHMARKS (RIGHT PANEL - BOTTOM)
+--------------------------------------------------------------------------------
+METRIC CARD 1:
+Value: < 40ms
+Label: SERVER TURN LATENCY (p95)
+
+METRIC CARD 2:
+Value: 100% ACC
+Label: VOICE BENCHMARK (84 UTTERANCES)
+
+METRIC CARD 3:
+Value: ₹0 COST
+Label: 100% LOCAL (ZERO CLOUD APIS)
+
+
+================================================================================
+6. STRUCTURED JSON FORMAT (FOR CODE INTEGRATION)
+================================================================================
+{
+  "category": "VOICE AI & FULL-STACK SYSTEMS",
+  "projectNumber": "01",
+  "projectName": "TADKA (तड़का)",
+  "tagline": "AI VOICE COPILOT & REVENUE ENGINE",
+  "techSummary": "React 18 • FastAPI • Vosk WASM • Piper TTS • SQLite • Vite",
+  "statusBadge": "PRODUCTION READY",
+  "runtimeBadge": "100% LOCAL // ~40MS",
+  "coreArchitecture": "A high-throughput, offline-first voice conversational runtime and statistical revenue engine engineered for sub-second restaurant phone order intake in English, Hindi, and Hinglish. Built with WebAssembly Vosk speech recognition, local Piper neural acoustic synthesis, scikit-learn intent classification, and Apriori frequent-itemset affinity mining for zero-cloud, privacy-preserving POS order dispatch.",
+  "keyHighlights": [
+    "Full-Duplex Multilingual NLU Pipeline: Real-time dialect code-switching parser handling colloquial Hinglish with dual-vocabulary phonetics, homophone disambiguation, and real-time English glossing at sub-5ms parse latency.",
+    "Autonomous Revenue & Menu Engineering Engine: Offline Apriori itemset mining (evaluating 12k+ orders in 0.25s) paired with a 4-quadrant BCG matrix (Stars, Plowhorses, Puzzles, Dogs) and empirical price elasticity guardrails to maximize average order value.",
+    "Deterministic POS & Kitchen Dispatch Subsystem: Zero-loss idempotent order queue generating standard thermal Kitchen Order Tickets (KOT) with sequential tracking, automatic retry backoff, and live Server-Sent Events (SSE) broadcast."
+  ],
+  "meta": {
+    "role": "Lead Full-Stack & AI Systems Engineer",
+    "timeline": "4 Weeks",
+    "focus": "Multilingual Voice AI • Revenue Engineering • Local-First Systems • Restaurant POS"
+  },
+  "repository": {
+    "badge": "OPEN SOURCE • MIT",
+    "url": "https://github.com/Saumya2509/AI-Voice-Copilot",
+    "docsUrl": "https://github.com/Saumya2509/AI-Voice-Copilot#readme",
+    "cloneCommand": "git clone https://github.com/Saumya2509/AI-Voice-Copilot.git"
+  },
+  "techStack": [
+    "React 18",
+    "TypeScript",
+    "FastAPI",
+    "Vosk (Offline STT)",
+    "Piper Neural TTS",
+    "Scikit-Learn",
+    "TailwindCSS",
+    "SQLite (Paise-Exact)"
+  ],
+  "metrics": [
+    {
+      "value": "< 40ms",
+      "label": "SERVER TURN LATENCY (p95)"
+    },
+    {
+      "value": "100% ACC",
+      "label": "VOICE BENCHMARK (84 UTTERANCES)"
+    },
+    {
+      "value": "₹0 COST",
+      "label": "100% LOCAL (ZERO CLOUD APIS)"
+    }
+  ]
+}
+================================================================================
